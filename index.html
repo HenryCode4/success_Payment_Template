@@ -106,6 +106,13 @@
       .text-gray {
         color: #434343;
       }
+
+      @media (max-width: 380px) {
+        .responsive-text {
+          font-size: 8px; 
+        }
+      }
+
     </style>
   </head>
 
@@ -242,9 +249,11 @@
         "
       ></div>
 
-      <p class="mx-auto text-center" style="padding-top: 0px; color: #8a8a8a; display: flex; flex-wrap: wrap; width: 100%; max-width: 420px; line-height: 1.5;">
-        You are receiving this email because you paid for a job post on JobPlaza. This is an automated message, please do not reply this message.
-      </p>
+      <div class="mx-auto text-center">
+        <p class="text-xxs responsive-text" style="padding-top: 0px; color: #8a8a8a; line-height: 1.5; margin: 0 auto; width: 100%; max-width: 566px;">
+          You are receiving this email because you paid for a job post on JobPlaza.<br />This is an automated message, please do not reply to this message.
+        </p>
+      </div>
 
       <p
         class="mx-auto text-center text-xxs"
